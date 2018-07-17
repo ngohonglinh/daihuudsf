@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Dai Huu DSF</string>
+    <string name="server_address">http://dqpapps.tk:8001</string>
+    <string name="title_activity_nav_drawer">Dai Huu DSF</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string-array name="lydo_array">
+        <item>Dầu</item>
+        <item>Nước đá</item>
+        <item>Nhớt, bọc</item>
+        <item>Ngư cụ</item>
+        <item>Đồ máy</item>
+        <item>Điện, cơ</item>
+        <item>Thức ăn</item>
+        <item>Chi trả nợ</item>
+        <item>Chi khác</item>
+        <item>...</item>
+    </string-array>
+    <string-array name="lydo_thu_array">
+        <item>Cá chợ</item>
+        <item>Mực khô</item>
+        <item>Cá phân</item>
+        <item>Thu tiền nợ</item>
+        <item>Thu khác</item>
+        <item>...</item>
+    </string-array>
+    <string-array name="chucvu_array">
+        <item>Thuyền trưởng</item>
+        <item>Thuyền viên</item>
+        <item>Máy trưởng</item>
+        <item>Kỹ thuật</item>
+        <item>Khác...</item>
+    </string-array>
+
+    <string name="title_activity_fullscreen_image">Dai Huu dsf</string>
+    <string name="dummy_button">Back</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

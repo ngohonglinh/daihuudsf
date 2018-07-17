@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="16dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="8dp"
+    android:orientation="vertical"
+    android:weightSum="18"
+    tools:context="net.feuapp.daihuudsf.TVCanCaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0">
+
+        <TextView
+            android:id="@+id/tv_TVCanCaId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_TVCanCaRkey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_TVCanCaServerKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_TVCanCaRkeyTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_TVCanCaUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:text="Ngày p/s: "
+            style="@style/myRightGravityTextview" />
+
+        <EditText
+            android:id="@+id/edt_TVCanCaNgayPS"
+            android:layout_weight="6"
+            style="@style/myHorizontalEdtittext"
+            android:hint="Ngày phát sinh"
+            android:focusable="false"
+            android:inputType="date" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:text="Notes: "
+            style="@style/myRightGravityTextview" />
+
+        <EditText
+            android:id="@+id/edt_TVCanCaNotes"
+            android:layout_weight="6"
+            style="@style/myHorizontalEdtittext"
+            android:hint="Ghi chú"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:text="Tên gọi: "
+            style="@style/myRightGravityTextview" />
+
+        <AutoCompleteTextView
+            android:id="@+id/aedt_TVCanCaTenTV"
+            android:layout_weight="5"
+            style="@style/myHorizontalEdtittext"
+            android:hint="Tên thuyền viên"
+            android:completionThreshold="1"
+            android:inputType="textPersonName" />
+        <CheckBox
+            android:id="@+id/chk_TVCanCaAutoTV"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:layout_weight="3"
+            android:text="Sản phẩm: "
+            style="@style/myRightGravityTextview" />
+
+        <AutoCompleteTextView
+            android:layout_weight="4"
+            android:id="@+id/aedt_TVCanCaTenHs"
+            style="@style/myHorizontalEdtittext"
+            android:hint="Sản phẩm"
+            android:completionThreshold="1"
+            android:inputType="textPersonName" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2">
+        </LinearLayout>
+        <EditText
+            android:id="@+id/aedt_TVCanCaSoLuong"
+            android:layout_width="0dp"
+            android:layout_weight="1.8"
+            style="@style/myHorizontalEdtittext"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:gravity="right"/>
+        <EditText
+            android:focusable="false"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@style/myHorizontalEdtittext"
+            android:text="kg"
+            android:gravity="left"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:layout_weight="3"
+            android:text="Đơn giá: "
+            style="@style/myRightGravityTextview" />
+
+        <EditText
+            android:id="@+id/edt_TVCanCaDonGia"
+            android:layout_weight="4"
+            style="@style/myHorizontalEdtittext"
+            android:imeOptions="flagNavigateNext"
+            android:hint="Đơn giá"
+            android:inputType="text" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2">
+        </LinearLayout>
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.6"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:src="@drawable/down" />
+        <EditText
+            android:id="@+id/aedt_TVCanCaGiamGia"
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            style="@style/myHorizontalEdtittext"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:gravity="right"/>
+        <EditText
+            android:focusable="false"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@style/myHorizontalEdtittext"
+            android:text="%" />
+    </LinearLayout>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv_TVCanCa"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></ListView>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.LinearLayoutCompat>
